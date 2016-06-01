@@ -10,7 +10,7 @@ angular.module('dashboardController', []).controller('dashboardController', func
 	userFactory.get_user(function(info){
 		$scope.current_user = info[0].name;
 		// console.log($scope.current_user);
-		// console.log(info[0].name);
+		console.log(info[0].name);
 	});
 
 	$scope.logout = function(){
