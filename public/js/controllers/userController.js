@@ -6,7 +6,7 @@ angular.module('userController', []).controller("userController", function($scop
 			$scope.current_users = data;
 		});
 
-		$scope.Newuser = {};
+		$scope.newUser = {};
 		$location.path('/dashboard');
 	}
 });
