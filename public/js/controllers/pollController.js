@@ -2,14 +2,14 @@ angular.module("pollController", []).controller('pollController', function($scop
 	$scope.current_user = [];
 	$scope.polls = [];
 
-	userFact.get_user(function(info){
+	userFactory.get_user(function(info){
 		// console.log(info[0].name);
 		$scope.current_user = info[0].name;
 	});
 
 	$scope.addPoll = function(data){
 		// console.log('hit addPoll in polls controller');
-		pollFact.create($scope.newPoll, function(data){
+		pollFactory.create($scope.newPoll, function(data){
 			$scope.polls = data;
 			// console.log($scope.polls);
 		});

@@ -2,7 +2,7 @@ angular.module('userController', []).controller("userController") function($scop
 	$scope.current_users = [];
 
 	$scope.loginUser = function(data){
-		userFact.login($scope.newUser, function(data){
+		userFactory.login($scope.newUser, function(data){
 			$scope.current_users = data;
 		});
 

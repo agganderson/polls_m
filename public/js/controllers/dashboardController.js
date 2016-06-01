@@ -2,12 +2,12 @@ angular.module('dashboardController', []).controller('dashboardController', func
 	$scope.current_user = [];
 	$scope.polls = [];
 
-	pollFact.index(function(data){
+	pollFactory.index(function(data){
 		$scope.polls = data;
 		// console.log($scope.polls[0]._id);
 	});
 
-	userFact.get_user(function(info){
+	userFactory.get_user(function(info){
 		$scope.current_user = info[0].name;
 		// console.log($scope.current_user);
 		// console.log(info[0].name);
@@ -19,9 +19,9 @@ angular.module('dashboardController', []).controller('dashboardController', func
 
 	$scope.deletePoll = function(id){
 		// console.log('delete poll controller');
-		pollFact.delete(id, function(){
+		pollFactory.delete(id, function(){
 
-			pollFact.index(function(data){
+			pollFactory.index(function(data){
 				$scope.polls = data;
 			});
 		});
