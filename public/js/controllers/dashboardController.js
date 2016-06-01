@@ -1,4 +1,4 @@
-angular.module('dashboardController', []).controller('dashboardController', function($scope, $location, $routeParams, userFactory, PollFactory){
+angular.module('dashboardController', []).controller('dashboardController', function($scope, $location, $routeParams, userFactory, pollFactory){
 	$scope.current_user = [];
 	$scope.polls = [];
 
