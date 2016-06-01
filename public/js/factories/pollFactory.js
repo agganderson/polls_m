@@ -2,12 +2,12 @@ angular.module("pollFactory", []).factory('pollFactory', function($http){
 	var factory = {};
 	var polls = [];
 
-	factory.index = function(callback){
-		$http.get('/polls').success(function(output){
-			polls = output;
-			callback(polls);
-		});
-	}
+	// factory.index = function(callback){
+	// 	$http.get('/polls').success(function(output){
+	// 		polls = output;
+	// 		callback(polls);
+	// 	});
+	// }
 
 	factory.create = function(info, callback){
 		// console.log('hit create in polls factory');
@@ -20,19 +20,19 @@ angular.module("pollFactory", []).factory('pollFactory', function($http){
 		})
 	}
 
-	factory.get_poll = function(id, callback){
-		$http.get('/polls/' + id).success(function(output){
-			// polls = output;
-			// console.log(polls);
-			callback(output);
-		});
-	}
+	// factory.get_poll = function(id, callback){
+	// 	$http.get('/polls/' + id).success(function(output){
+	// 		// polls = output;
+	// 		// console.log(polls);
+	// 		callback(output);
+	// 	});
+	// }
 
-	factory.getThisPoll = function(id, callback){
-		$http.get('/getPoll/' + id).success(function(output){
-			callback(output);
-		});
-	}
+	// factory.getThisPoll = function(id, callback){
+	// 	$http.get('/getPoll/' + id).success(function(output){
+	// 		callback(output);
+	// 	});
+	// }
 
 	factory.upOption1Vote = function(id, callback){
 		// console.log('in upOption1Vote factory');

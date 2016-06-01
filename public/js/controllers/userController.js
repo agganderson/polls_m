@@ -1,4 +1,4 @@
-angular.module('userController', []).controller("userController") function($scope, $location, $routeParams, userFactory){
+angular.module('userController', []).controller("userController", function($scope, $location, $routeParams, userFactory){
 	$scope.current_users = [];
 
 	$scope.loginUser = function(data){
