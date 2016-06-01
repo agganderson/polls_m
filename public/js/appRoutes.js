@@ -1,16 +1,16 @@
 angular.module("appRoutes", []).config(function($routeProvider){
 	$routeProvider
 		.when('/login', {
-			templateUrl: 'partials/login.html'
+			templateUrl: 'views/login.html'
 		})
 		.when('/dashboard', {
-			templateUrl: 'partials/dashboard.html'
+			templateUrl: 'views/dashboard.html'
 		})
 		.when('/create', {
-			templateUrl: 'partials/create.html'
+			templateUrl: 'views/create.html'
 		})
 		.when('/poll/:id', {
-			templateUrl: 'partials/poll.html'
+			templateUrl: 'views/poll.html'
 		})
 		.otherwise({
 			redirectTo: '/'
