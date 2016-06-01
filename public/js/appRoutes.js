@@ -13,6 +13,6 @@ angular.module("appRoutes", []).config(function($routeProvider){
 			templateUrl: 'views/poll.html'
 		})
 		.otherwise({
-			redirectTo: '/'
+			templateUrl: 'views/login.html'
 		});
 });
