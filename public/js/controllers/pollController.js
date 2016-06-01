@@ -1,4 +1,4 @@
-angular.module("pollController", []).controller('pollController', function($scope, $location, $routeParams, userFactory, pollFactory){
+angular.module("pollController", []).controller("pollController", function($scope, $location, $routeParams, userFactory, PollFactory){
 	$scope.current_user = [];
 	$scope.polls = [];
 

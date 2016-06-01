@@ -1,4 +1,4 @@
-angular.module("userFactory", []).factory('userFactory', function($http){
+angular.module("userFactory", []).factory("userFactory", function($http){
 	var factory = {};
 	var current_users = [];
 
