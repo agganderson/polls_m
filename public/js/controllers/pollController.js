@@ -7,6 +7,10 @@ angular.module("pollController", []).controller("pollController", function($scop
 		$scope.current_user = info[0].name;
 	});
 
+	$scope.logout = function(){
+		$scope.current_user = "";
+	}
+
 	$scope.addPoll = function(data){
 		// console.log('hit addPoll in polls controller');
 		pollFactory.create($scope.newPoll, function(data){

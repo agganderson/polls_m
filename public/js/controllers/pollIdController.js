@@ -8,6 +8,10 @@ angular.module("pollIdController", []).controller("pollIdController", function($
 		$scope.current_user = info;
 	});
 
+	$scope.logout = function(){
+		$scope.current_user = "";
+	}
+
 	$scope.get_poll = function(id){
 		var location = '/poll/' + id;
 		$location.path(location);
